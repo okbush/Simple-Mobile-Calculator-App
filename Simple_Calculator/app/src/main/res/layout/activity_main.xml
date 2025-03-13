@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Result Display -->
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:gravity="end"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:gravity="end"
+        android:text="0"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Buttons Grid -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:layout_marginTop="10dp">
+
+        <!-- First Row -->
+        <Button
+            android:id="@+id/clear_text"
+            android:text="AC"
+            style="@style/ButtonStyle"
+            android:backgroundTint="#A5A5A5"/>
+
+        <Button
+            android:id="@+id/div"
+            android:text="÷"
+            style="@style/ButtonStyle"
+            android:backgroundTint="#FF9500"/>
+
+        <Button
+            android:id="@+id/mul"
+            android:text="×"
+            style="@style/ButtonStyle"
+            android:backgroundTint="#FF9500"/>
+
+        <Button
+            android:id="@+id/sub"
+            android:text="-"
+            style="@style/ButtonStyle"
+            android:backgroundTint="#FF9500"/>
+
+        <!-- Second Row -->
+        <Button android:id="@+id/num7" android:text="7" style="@style/ButtonStyle"/>
+        <Button android:id="@+id/num8" android:text="8" style="@style/ButtonStyle"/>
+        <Button android:id="@+id/num9" android:text="9" style="@style/ButtonStyle"/>
+        <Button android:id="@+id/add" android:text="+" style="@style/ButtonStyle" android:backgroundTint="#FF9500"/>
+
+        <!-- Third Row -->
+        <Button android:id="@+id/num4" android:text="4" style="@style/ButtonStyle"/>
+        <Button android:id="@+id/num5" android:text="5" style="@style/ButtonStyle"/>
+        <Button android:id="@+id/num6" android:text="6" style="@style/ButtonStyle"/>
+        <Button android:id="@+id/submit" android:text="=" style="@style/ButtonStyle" android:backgroundTint="#FF9500"/>
+
+        <!-- Fourth Row -->
+        <Button android:id="@+id/num1" android:text="1" style="@style/ButtonStyle"/>
+        <Button android:id="@+id/num2" android:text="2" style="@style/ButtonStyle"/>
+        <Button android:id="@+id/num3" android:text="3" style="@style/ButtonStyle"/>
+        <Button android:id="@+id/dot" android:text="." style="@style/ButtonStyle"/>
+
+        <!-- Fifth Row -->
+        <Button
+            android:id="@+id/zero"
+            android:text="0"
+            style="@style/ButtonStyle"
+            android:layout_columnSpan="2"
+            android:layout_width="160dp"/>
+    </GridLayout>
+</LinearLayout>
